@@ -1,0 +1,12 @@
+@import './base.css';
+
+:root {
+    --color-brand: #3964fe;
+    --color-brand-hover: #2e50d6;
+    --color-brand-soft: #f2f5ff;
+    --color-primary-label: #333;
+    --color-secondary-label: rgba(51, 51, 51, 0.8);
+    --color-tertiary-label: rgba(51, 51, 51, 0.6);
+    --color-active-background: rgba(0, 0, 0, 0.03);
+    --color-border: rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: pocketlife-oss # 应用名称
+  profiles:
+    active: dev # 默认激活 dev 本地开发环境
+  cloud:
+    nacos:
+      config:
+        server-addr: http://${NACOS_SERVER_ADDR:127.0.0.1:8848} # Nacos 配置中心地址
+        prefix: ${spring.application.name} # 配置 Data Id 前缀，这里使用应用名称作为前缀
+        group: DEFAULT_GROUP # 所属组
+        namespace: pocketlife # 命名空间
+        file-extension: yaml # 配置文件格式
+        refresh-enabled: true # 是否开启动态刷新
+      discovery:
+        enabled: true # 启用服务发现
+        group: DEFAULT_GROUP # 所属组
+        namespace: pocketlife # 命名空间
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848} # Nacos 服务发现地址

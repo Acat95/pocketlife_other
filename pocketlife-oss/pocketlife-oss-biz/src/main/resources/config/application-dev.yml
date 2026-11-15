@@ -1,0 +1,13 @@
+#=================================================================
+# 对象存储配置
+#=================================================================
+storage:
+  minio:
+    endpoint: ${MINIO_ENDPOINT:http://127.0.0.1:9000}
+    accessKey: ${STORAGE_MINIO_ACCESS_KEY:}
+    secretKey: ${STORAGE_MINIO_SECRET_KEY:}
+  aliyun-oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    accessKey: ${POCKETLIFE_OSS_ACCESS_KEY:}
+    secretKey: ${POCKETLIFE_OSS_SECRET_KEY:}
+

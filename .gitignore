@@ -1,0 +1,43 @@
+# Local state, credentials and exports
+.pocketlife/
+.env
+.env.*
+!.env.example
+*.local
+*.local.yml
+*.local.yaml
+*.local.properties
+*.key
+*.pem
+*.p12
+*.jks
+*.dump
+
+# Build outputs and dependencies
+target/
+.flattened-pom.xml
+node_modules/
+dist/
+dist-ssr/
+coverage/
+build/
+*.tsbuildinfo
+
+# Runtime logs and crash reports
+logs/
+*.log
+*.log.*
+hs_err_pid*
+replay_pid*
+
+# Editor and operating system files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db

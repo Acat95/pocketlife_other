@@ -1,0 +1,2 @@
+com.pocketlife.framework.biz.context.config.ContextAutoConfiguration
+com.pocketlife.framework.biz.context.config.FeignContextAutoConfiguration
